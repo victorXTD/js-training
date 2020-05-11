@@ -4,7 +4,11 @@ import Chart from "../../components/Chart02";
 import instruction from "./instruction.md";
 
 const convertData = (input) => {
-  return []; // ここを作りましょう！
+  // input.forEach((item, index, ary) => {
+  //   console.log(item, index, ary)
+  // });
+  input.sort((i1, i2) => i2.count - i1.count);
+  return input.slice(0, 20); // ここを作りましょう！
 };
 
 const Lesson = () => {

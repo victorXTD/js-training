@@ -4,6 +4,14 @@ import Chart from "../../components/Chart09";
 import instruction from "./instruction.md";
 
 const convertData = (input) => {
+  const departments = Array.from(new Set(input.map(({ department }) => department)));
+
+  console.log(departments);
+
+  const bureaus = Array.from(new Set(input.map(({ bureau }) => bureau)));
+
+  console.log(bureaus);
+
   return { children: [] }; // ここを作りましょう！
 };
 

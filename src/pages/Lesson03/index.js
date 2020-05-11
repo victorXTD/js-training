@@ -3,8 +3,11 @@ import LessonPage from "../../components/LessonPage";
 import Chart from "../../components/Chart03";
 import instruction from "./instruction.md";
 
-const convertData = (input) => {
-  return []; // ここを作りましょう！
+const convertData = (input) => { // `input` から `gender` が男性の要素のみを取り出し
+  return input.filter((item) => {
+    return item.gender === '男性';
+  });
+  // ここを作りましょう！
 };
 
 const Lesson = () => {
@@ -24,6 +27,7 @@ const Lesson = () => {
       title="Lesson 03"
       Chart={Chart}
     />
+    
   );
 };
 
