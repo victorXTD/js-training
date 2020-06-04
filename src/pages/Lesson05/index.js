@@ -5,10 +5,9 @@ import instruction from "./instruction.md";
 
 const convertData = (input) => {
 
-
   const genders = Array.from(new Set(input.map(({ gender }) => gender)));
 
-  console.log(genders);
+  // console.log(genders);
 
   const min = Math.round(Math.min(...input.map(({ y }) => y)));
   const max = Math.round(Math.max(...input.map(({ y }) => y)));
@@ -29,9 +28,6 @@ const convertData = (input) => {
   console.log(bins);
   
   return bins;
-
-
-  
 
   // ここを作りましょう！
 };

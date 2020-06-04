@@ -5,7 +5,7 @@ import instruction from "./instruction.md";
 
 const convertData = (input) => { // `input` から `gender` が男性の要素のみを取り出し
   return input.filter((item) => {
-    return item.gender === '男性';
+    return (item.gender === '男性') && (item.y >= 170);
   });
   // ここを作りましょう！
 };

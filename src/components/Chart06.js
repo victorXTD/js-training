@@ -47,6 +47,7 @@ const Chart = ({ data }) => {
           legendOffset: -10,
         },
       ]}
+      curve="step"
       axesPlan="foreground"
       strokeWidth={3}
       lineOpacity={0.1}

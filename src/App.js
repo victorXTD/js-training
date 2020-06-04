@@ -25,6 +25,9 @@ import Lesson07 from "./pages/Lesson07";
 import Lesson08 from "./pages/Lesson08";
 import Lesson09 from "./pages/Lesson09";
 import Lesson10 from "./pages/Lesson10";
+import NewPage from "./pages/NewPage";
+import NewPage2 from "./pages/NewPage2";
+import NewPage3 from "./pages/NewPage3";
 import Answer01 from "./pages/Answer01";
 import Answer02 from "./pages/Answer02";
 import Answer03 from "./pages/Answer03";
@@ -60,6 +63,9 @@ const App = () => {
                 <IonItem routerLink="/lesson08">Lesson 08</IonItem>
                 <IonItem routerLink="/lesson09">Lesson 09</IonItem>
                 <IonItem routerLink="/lesson10">Lesson 10</IonItem>
+                <IonItem routerLink="/NewPage">NewPage</IonItem>
+                <IonItem routerLink="/NewPage2">NewPage2</IonItem>
+                <IonItem routerLink="/NewPage3">NewPage3</IonItem>
               </IonList>
             </IonContent>
           </IonMenu>
@@ -75,6 +81,9 @@ const App = () => {
             <Route path="/lesson08" component={Lesson08} />
             <Route path="/lesson09" component={Lesson09} />
             <Route path="/lesson10" component={Lesson10} />
+            <Route path="/NewPage" component={NewPage} />
+            <Route path="/NewPage2" component={NewPage2} />
+            <Route path="/NewPage3" component={NewPage3} />
             <Route path="/answer01" component={Answer01} />
             <Route path="/answer02" component={Answer02} />
             <Route path="/answer03" component={Answer03} />

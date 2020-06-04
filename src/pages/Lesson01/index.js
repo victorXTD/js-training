@@ -4,8 +4,6 @@ import Chart from "../../components/Chart01";
 import instruction from "./instruction.md";
 
 const convertData = (input) => {
-  
-  console.log("a");
 
   input.sort((i2, i1) => i1[1] - i2[1]);
 

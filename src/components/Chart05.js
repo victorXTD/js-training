@@ -2,13 +2,16 @@ import React from "react";
 import { ResponsiveBar } from "@nivo/bar";
 
 const Chart = ({ data }) => {
+
   return (
     <ResponsiveBar
       data={data}
+      // keys={key}
       keys={["男性", "女性"]}
       indexBy="bin"
       margin={{ top: 40, right: 20, bottom: 120, left: 60 }}
-      padding={0.3}
+      padding={0.3} 
+      // groupMode="grouped"
       colors={{ scheme: "nivo" }}
       borderColor={{ from: "color", modifiers: [["darker", 1.6]] }}
       axisTop={null}
